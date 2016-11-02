@@ -3,7 +3,7 @@ package algorithms.sorting;
 import java.util.Arrays;
 
 /**
- * Created by Harish on 11/1/16.
+ * Created by Harish
  */
 public class QuickSort {
     public static void main(String [] args) {
