@@ -17,7 +17,7 @@ public class MergeSort {
 
     public static void mergeSort(int arr[], int start, int end) {
         if(start < end) {
-            int middle = (int)Math.floor((start + end)/2);
+            int middle = start + (end - start)/2; //(int)Math.floor((start + end)/2);
             mergeSort(arr, start, middle);
             mergeSort(arr, middle + 1, end);
             merge(arr, start, middle, end);

@@ -7,9 +7,9 @@ import java.util.Arrays;
  */
 public class QuickSort {
     public static void main(String [] args) {
-        int[] arr = {12, 9, 7, 15, 10};
+        int[] arr = {2, 5, 8, 23, 7, 9, 12, 16};
         int start = 0;
-        int end = arr.length -1;
+        int end = arr.length-1;
         quickSort(arr, start, end);
         System.out.println(Arrays.toString(arr));
     }
@@ -26,7 +26,7 @@ public class QuickSort {
         int pivot = arr[end];
         int i = start;
 
-        for(int j = start; j < end-1; j++) {
+        for(int j = start; j < end; j++) {
             if(arr[j] <= pivot) {
                 int temp = arr[i];
                 arr[i] = arr[j];
