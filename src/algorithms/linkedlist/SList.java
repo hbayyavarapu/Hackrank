@@ -1,7 +1,7 @@
 package algorithms.linkedlist;
 
 /**
- * Created by Harish on 6/25/17.
+ * Created by Harish
  */
 
 public class SList {

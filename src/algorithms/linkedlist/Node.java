@@ -1,11 +1,11 @@
 package algorithms.linkedlist;
 
 /**
- * Created by Harish on 6/27/17.
+ * Created by Harish
  */
 public class Node {
-    Node next;
-    Object data;
+    public Node next;
+    public Object data;
 
     Node(Object data, Node next) {
         this.data = data;

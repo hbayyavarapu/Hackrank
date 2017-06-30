@@ -20,11 +20,19 @@ public class QSortSList {
         slist.insertNth(1, 4);
         slist.insertNth(7, 2);
 
-        partition(slist, slist.head, slist.tail);
+        partition(slist);
 
     }
 
-    public static void partition(SList slist, Node start, Node end) {
+    public static void partition(SList slist) {
+        Node pivot = slist.tail;
+        Node head = slist.head;
+
+        while(head.next != null) {
+//            if(head.data.pivot.data) {
+//
+//            }
+        }
 
     }
 }

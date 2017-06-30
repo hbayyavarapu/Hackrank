@@ -3,7 +3,7 @@ package algorithms.interviews;
 import java.util.LinkedList;
 
 /**
- * Created by Harish on 6/22/17.
+ * Created by Harish
  */
 public class PCTest {
     public static void main(String[] args)  throws InterruptedException{

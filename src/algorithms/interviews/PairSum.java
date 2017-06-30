@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Harish on 6/18/17.
+ * Created by Harish
  */
 public class PairSum {
 
