@@ -1,7 +1,7 @@
 package algorithms.sorting;
 
-import algorithms.linkedlist.Node;
-import algorithms.linkedlist.SList;
+import algorithms.linkedlist.singlelinkedlist.Node;
+import algorithms.linkedlist.singlelinkedlist.SList;
 
 /**
  * Created by Harish on 6/27/17.

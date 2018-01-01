@@ -1,4 +1,4 @@
-package algorithms.linkedlist;
+package algorithms.linkedlist.singlelinkedlist;
 
 /**
  * Created by Harish
@@ -102,7 +102,7 @@ public class SList {
         slist.addFront(2);
         slist.insertEnd(9);
         System.out.println("Before nth Linked List: " + slist.toString());
-        slist.insertNth(1, 4);
+        slist.insertNth(1, 1);
         slist.insertNth(7, 2);
         System.out.println("After nth Linked List: " + slist.toString());
         slist.deleteNth(3);
