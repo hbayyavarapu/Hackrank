@@ -21,18 +21,18 @@ public class Median {
 
 
         //Slow
-        /*for(int i = 0; i < a.length; i++) {
+        for(int i = 0; i < a.length; i++) {
             int[] temp = new int[i+1];
             for(int j = 0; j <= i; j++) {
                 temp[j] = a[j];
             }
             System.out.println(findMedian(temp));
-        }*/
+        }
 
     }
 
     //Slow
-    /*public static float findMedian(int[] a) {
+    public static float findMedian(int[] a) {
         int length = a.length;
         double median = 0.0;
         MergeSort.mergeSort(a, 0, a.length-1);
@@ -47,5 +47,5 @@ public class Median {
             return (float)a[m-1];
         }
 
-    }*/
+    }
 }

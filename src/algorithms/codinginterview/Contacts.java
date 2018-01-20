@@ -15,6 +15,7 @@ public class Contacts {
         for(int a0 = 0; a0 < n; a0++){
             String op = in.next();
             String contact = in.next();
+
             /*if(op.equalsIgnoreCase("add")) {
                 addOrFind(contact, op);
             } else {

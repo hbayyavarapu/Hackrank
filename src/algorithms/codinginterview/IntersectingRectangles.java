@@ -9,6 +9,10 @@ class Point {
         this.y = y;
     }
 }
+
+/**
+ * Program to check if two rectangles intersect
+ */
 public class IntersectingRectangles {
     public  static void main(String[] args) {
         Point l1 = new Point(0,10);

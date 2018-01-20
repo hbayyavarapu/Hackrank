@@ -93,6 +93,20 @@ public class SList {
         return result;
     }
 
+    public Node reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next = null;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+        return head;
+    }
+
     public static void main(String[] args) {
         SList slist  = new SList();
         slist.addFront(10);
@@ -108,6 +122,8 @@ public class SList {
         slist.deleteNth(3);
         System.out.println("After deletion:  " + slist.toString());
         System.out.println("length: " + slist.length());
+        slist.reverse();
+        System.out.println(slist.toString());
     }
 
 }

@@ -13,7 +13,8 @@ public class BinarySearch {
         int end = arr.length - 1;
         int target = 8;
 
-        MergeSort.mergeSort(arr, 0, end);
+        Arrays.sort(arr);
+        //MergeSort.mergeSort(arr, 0, end);
 
         System.out.println("Sorted Array: " + Arrays.toString(arr));
         int result = binarySearch(arr, 0, end, target);

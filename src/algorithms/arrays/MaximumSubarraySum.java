@@ -1,13 +1,21 @@
 package algorithms.arrays;
 
+/**
+ * Find out the maxium subarray sum in a given array
+ */
 public class MaximumSubarraySum {
     public static void main(String[] args) {
-        int[] a = {-2, -5, 6, -2, -3, 1, 5, -6};
-        solveByNaive(a);
-        divideAndConquer(a);
-        KadensAlgo(a);
+        //int[] a = {7, 2, 3, 10, 2, 4, 8, 1};
+        int[] a = {6, 7, 9, 5, 6, 3, 2};
+//        solveByNaive(a);
+//        divideAndConquer(a);
+//        KadensAlgo(a);
+        solveByNaiveDifference(a);
+
     }
 
+
+    // O(N^2)
     public static void  solveByNaive(int[] a) {
         int maxSumSoFar = 0;
         for(int i = 0; i < a.length; i++) {
@@ -22,6 +30,22 @@ public class MaximumSubarraySum {
         System.out.println(maxSumSoFar);
     }
 
+    // O(N^2)
+    public static void  solveByNaiveDifference(int[] a) {
+        int difference = a[1] - a[0];
+        int i, j;
+        for (i = 0; i < a.length; i++)
+        {
+            for (j = i + 1; j < a.length; j++)
+            {
+                if (a[j] - a[i] > difference)
+                    difference = a[j] - a[i];
+            }
+        }
+        System.out.println(difference);
+    }
+
+    // Divide & Conquer approach in O(Nlog N) performance
     public static void  divideAndConquer(int[] a) {
         int l = 0;
         int h = a.length - 1;

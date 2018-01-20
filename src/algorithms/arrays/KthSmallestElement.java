@@ -13,7 +13,7 @@ public class KthSmallestElement {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(findKthSmallest(arr, 2));
+        System.out.println(findKthSmallest(arr, 1));
     }
 
     public static int findKthSmallest(int a[], int k) {
